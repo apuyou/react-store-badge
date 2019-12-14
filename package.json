@@ -1,0 +1,29 @@
+{
+  "name": "react-store-badge",
+  "version": "1.0.0",
+  "description": "A React component to display App Store and/or Google Play badges based on the browser",
+  "main": "build/index.cjs.js",
+  "module": "build/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apuyou/react-store-badge.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Arthur Puyou <arthur@puyou.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apuyou/react-store-badge/issues"
+  },
+  "homepage": "https://github.com/apuyou/react-store-badge#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "rollup": "^1.27.13"
+  }
+}
