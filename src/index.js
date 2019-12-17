@@ -34,11 +34,14 @@ function Widget({ name, appStoreUrl, googlePlayUrl }) {
 
   const badges = [];
   if (
-    navigator.userAgent.indexOf('iPhone') !== -1 ||
-    navigator.userAgent.indexOf('iPad') !== -1
+    typeof navigator !== 'undefined' &&
+    navigator.userAgent.indexOf('iPhone OS') !== -1
   ) {
     badges.push(appStore);
-  } else if (navigator.userAgent.indexOf('Android') !== -1) {
+  } else if (
+    typeof navigator !== 'undefined' &&
+    navigator.userAgent.indexOf('Android') !== -1
+  ) {
     badges.push(googlePlay);
   } else {
     badges.push(appStore);
