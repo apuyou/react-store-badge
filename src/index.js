@@ -14,6 +14,7 @@ function Badge({ name, url, svg, alt, className }) {
 function Widget({ name, appStoreUrl, googlePlayUrl }) {
   const appStore = (
     <Badge
+      key="appstore"
       name={name}
       url={appStoreUrl}
       svg={appStoreBadge}
@@ -24,6 +25,7 @@ function Widget({ name, appStoreUrl, googlePlayUrl }) {
 
   const googlePlay = (
     <Badge
+      key="googleplay"
       name={name}
       url={googlePlayUrl}
       svg={googlePlayBadge}
