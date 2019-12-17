@@ -12,7 +12,7 @@ function Badge({ name, url, svg, alt, className }) {
 }
 
 function Widget({ name, appStoreUrl, googlePlayUrl }) {
-  const appStore = (
+  const appStore = appStoreUrl && (
     <Badge
       key="appstore"
       name={name}
@@ -23,7 +23,7 @@ function Widget({ name, appStoreUrl, googlePlayUrl }) {
     />
   );
 
-  const googlePlay = (
+  const googlePlay = googlePlayUrl && (
     <Badge
       key="googleplay"
       name={name}
