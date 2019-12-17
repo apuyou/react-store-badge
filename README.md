@@ -34,9 +34,9 @@ function Page() {
     <div>
       <p>Download Cheerswipe!</p>
       <StoreBadge
-        data-name="Cheerswipe"
-        data-google-play-url="https://play.google.com/store/apps/details?id=fr.puyou.cheerswipe"
-        data-app-store-url="https://apps.apple.com/us/app/cheerswipe/id1468158095?ls=1"
+        name="Cheerswipe"
+        googlePlayUrl="https://play.google.com/store/apps/details?id=fr.puyou.cheerswipe"
+        appStoreUrl="https://apps.apple.com/us/app/cheerswipe/id1468158095?ls=1"
       />
     </div>
   );

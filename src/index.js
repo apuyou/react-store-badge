@@ -11,11 +11,11 @@ function Badge({ name, url, svg, alt, className }) {
   );
 }
 
-function Widget({ dataName, dataAppStoreUrl, dataGooglePlayUrl }) {
+function Widget({ name, appStoreUrl, googlePlayUrl }) {
   const appStore = (
     <Badge
-      name={dataName}
-      url={dataAppStoreUrl}
+      name={name}
+      url={appStoreUrl}
       svg={appStoreBadge}
       alt="Download on the App Store"
       className="store-badge-app-store"
@@ -24,8 +24,8 @@ function Widget({ dataName, dataAppStoreUrl, dataGooglePlayUrl }) {
 
   const googlePlay = (
     <Badge
-      name={dataName}
-      url={dataGooglePlayUrl}
+      name={name}
+      url={googlePlayUrl}
       svg={googlePlayBadge}
       alt="Get it on Google Play"
       className="store-badge-google-play"
