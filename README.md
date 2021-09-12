@@ -11,7 +11,7 @@ A React component to display App Store and/or Google Play badges based on the br
 
 If the browser is an iPhone or iPad, only the App Store badge will be displayed. If the browser is running on Android, only the Google Play badge will be displayed. In all other cases, both badges are shown.
 
-## Instalation
+## Installation
 
 ```bash
 $ npm i react-store-badge
