@@ -3,15 +3,15 @@ import React from 'react';
 import appStoreBadge from './appstore.svg';
 import googlePlayBadge from './googleplay.svg';
 
-function Badge({ name, url, svg, alt, className }) {
+function Badge({ name, url, svg, alt, className, ...rest }) {
   return (
-    <a href={url} title={name} className={className}>
+    <a href={url} title={name} className={className} {...rest}>
       <img src={svg} alt={alt} />
     </a>
   );
 }
 
-function Widget({ name, appStoreUrl, googlePlayUrl }) {
+function Widget({ name, appStoreUrl, googlePlayUrl, ...rest }) {
   const appStore = appStoreUrl && (
     <Badge
       key="appstore"
@@ -20,6 +20,7 @@ function Widget({ name, appStoreUrl, googlePlayUrl }) {
       svg={appStoreBadge}
       alt="Download on the App Store"
       className="store-badge-app-store"
+      {...rest}
     />
   );
 
@@ -31,6 +32,7 @@ function Widget({ name, appStoreUrl, googlePlayUrl }) {
       svg={googlePlayBadge}
       alt="Get it on Google Play"
       className="store-badge-google-play"
+      {...rest}
     />
   );
 
