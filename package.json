@@ -1,6 +1,6 @@
 {
   "name": "react-store-badge",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A React component to display App Store and/or Google Play badges based on the browser",
   "main": "build/index.cjs.js",
   "module": "build/index.es.js",
