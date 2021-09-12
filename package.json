@@ -23,13 +23,13 @@
   },
   "homepage": "https://github.com/apuyou/react-store-badge#readme",
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
-    "@babel/preset-react": "^7.7.4",
-    "@rollup/plugin-image": "^2.0.0",
-    "prettier": "^1.19.1",
-    "rollup": "^1.27.13",
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@rollup/plugin-image": "^2.1.1",
+    "prettier": "^2.4.0",
+    "rollup": "^2.56.3",
     "rollup-plugin-babel": "^4.3.3"
   },
   "peerDependencies": {
